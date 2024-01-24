@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src.js" defer></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+      #ruleInput {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+    <title>Wolfram</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      id="ruleInput"
+      placeholder="Enter rule (0-255)"
+      min="0"
+      max="255"
+    />
+    <noscript>Please enable JavaScript</noscript>
+    <canvas id="canvas" width="150" height="150"></canvas>
+  </body>
+</html>
